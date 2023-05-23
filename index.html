@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Weather App</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bbaba8ef75.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="card">
+        <div class="search">
+          <input type="text" placeholder="check weather in..." spellcheck="false">
+          <button>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <div class="error">
+          <p>Please enter a valid city name</p>
+        </div>
+        <div class="weather">
+          <h1 class="temp">22°c</h1>
+          <h2 class="city">New York</h2>
+          <!-- <h3 class="country">US</h2> -->
+          <h1 class="weather-icon"><i class="fas fa-cloud-rain"></i></h1>
+          <h3 class="weather-condition">Cloudy</h2>
+          <div class="details">
+            <div class="col">
+              <i class="fas fa-water"></i>
+              <div>
+                <p class="humidity">50%</p>
+                <p>Humidity</p>
+              </div>
+            </div>
+            <div class="col">
+              <i class="fas fa-wind"></i>
+              <div>
+                <p class="wind">15 km/h</p>
+                <p>Wind Speed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./weather.js"></script>  
+  </body>
+  </html>
